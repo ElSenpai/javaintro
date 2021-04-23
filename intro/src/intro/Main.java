@@ -124,8 +124,85 @@ public class Main {
 	System.out.println("while Döngüsü bitti");
 	 
 	
+	String student1="Ceren";
+	String student2="Ahmet";
+	String student3="Esra";
+	String student4="Salih";
+	
+	System.out.println(student2);
+	System.out.println(student1);
+	System.out.println(student3);
+	
+	System.out.println("------------------------------------");
+	
+	String[] ogrenciler=new String[4];
+	ogrenciler[0]="Engin";
+	ogrenciler[1]="Derin";
+	ogrenciler[2]="Senpai";
+	ogrenciler[3]="Ali";
+	for(int j=0;j<ogrenciler.length;j++) {
+		System.out.println(ogrenciler[j]);
+	}
+	System.out.println("------------------------------------");
+	
+	String[] students= {"Ceren","Ahmet","Esra","Salih"};
+	
+	for (String stu : students) {
+		System.out.println(stu);
+	}
+	
+	System.out.println("------------------------------------");
+	
+	double [] myListSome= {1.2,2.3,3.4,4.5};
+	double total=0;
+	double max=myListSome[0];
 	
 	
+	
+	for(double num:myListSome) {
+		if(max<num)
+			max=num;
+		total=total+num;
+		System.out.println(num);
+	}
+	System.out.println("Toplam = "+total);
+	System.out.println("En Büyük = "+max);
+	System.out.println("------------------------------------");
+	
+	String[] [] matriks = new String[3][3];
+	
+	matriks[0][2]="Ahmet";
+	matriks[1][2]="Salih";
+	matriks[2][2]="Uçar";
+	
+	matriks[0][0]="Ceren";
+	matriks[1][0]="Budak";
+	matriks[2][0]="Senpai";
+	
+	matriks[1][1]="Engin";
+	matriks[2][1]="Demirog";
+	matriks[0][1]="Kodlama";
+	
+	for(String[]mat:matriks) {
+	
+	System.out.println(mat[2]);
+	}
+	System.out.println("------------------------------------");
+	for (int j = 0; j < matriks.length; j++) {
+		System.out.println("-----");
+		for (int j2 = 0; j2 < matriks.length; j2++) {
+			System.out.println(matriks[j][j2]);
+		}
+		
+	}
+	
+	System.out.println("------------------------------------");
+	for (int j = 0; j < 3; j++) {
+		System.out.println("------");
+		for (int j2 = 0; j2 < 3; j2++) {
+			System.out.println(matriks[j][j2]);
+		}
+	}
 	
 	}
 
