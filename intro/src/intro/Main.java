@@ -1,6 +1,6 @@
 package intro;
 
-import java.util.Iterator;
+
 
 public class Main {
 
@@ -10,8 +10,8 @@ public class Main {
 		String internetSubeButonu="internet Þubeye Gir";
 		double dolarDun=8.15;
 		double dolarBugun=8.19;
-		int vade =36;
-		boolean dustuMu=false;
+		//int vade =36;
+		//boolean dustuMu=false;
 		
 	  System.out.println(internetSubeButonu);
 	  
@@ -56,6 +56,77 @@ public class Main {
 	 sehir2="izmir";
 	 System.out.println(sehir1);
 		
+	 // Ödev 3  ; 5-23 arasý uygulama
+	 
+	 int ogrenciSayisi=10;
+	 String mesage="Öðrenci Sayýsý : ";
+	 
+	 System.out.println("ogrenci sayýsý : "+ ogrenciSayisi);
+	 System.out.println(mesage+ ogrenciSayisi);
+	 
+	 
+	int number=30;
+	if (number<20) {
+		System.out.println("Sayý 20 den küçüktür");
+	}else if(number==20){
+		System.out.println("Sayý 20 ye eþittir");
+	}else {
+		System.out.println("Sayý 20 den büyüktür");
+	}
+	
+	int number1=30;
+	int number2=235;
+	int number3=555;
+	int enBuyuk=number1;
+	
+	if (enBuyuk<number2) {
+		enBuyuk=number2;
+		
+	}
+	
+	if (enBuyuk<number3) {
+		enBuyuk=number3;
+	}
+	
+	System.out.println("En Büyük Sayý : " +enBuyuk);
+	
+	
+	char grade = 'B';
+	
+	switch (grade) {
+	case 'A': 
+	case 'B':	
+		System.out.println("Mükemmel Geçtiniz");
+		break;
+	case'C':
+		System.out.println("geçtiniz");
+		break;
+	case'D':
+	case'F':
+		System.out.println("D Kaldýnýz");
+		break;
+		default:
+			System.out.println("geçersiz not girdiniz");
+	
+	}
+	
+	
+	
+	for (int i = 1; i <10; i++) {
+	  System.out.println(i);
+	}
+	System.out.println("For Döngüsü bitti");
+	int i =2;
+	while (i<10) {
+		System.out.println(i);
+		i+=2;
+	}
+	System.out.println("while Döngüsü bitti");
+	 
+	
+	
+	
+	
 	}
 
 }
