@@ -127,7 +127,7 @@ public class Main {
 	String student1="Ceren";
 	String student2="Ahmet";
 	String student3="Esra";
-	String student4="Salih";
+	
 	
 	System.out.println(student2);
 	System.out.println(student1);
