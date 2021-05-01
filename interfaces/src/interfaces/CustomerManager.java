@@ -2,7 +2,7 @@ package interfaces;
 
 public class CustomerManager {
 	
-	Logger logger;
+   private	Logger logger;
 	
 	public CustomerManager(Logger logger) {
 		
