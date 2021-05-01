@@ -3,7 +3,9 @@ package interfaces;
 public class Main {
 
 	public static void main(String[] args) {
-		CustomerManager cus=new CustomerManager(new EmailLogger());
+		
+		Logger[] loggers= {new SmsLogger(),new EmailLogger()};
+		CustomerManager cus=new CustomerManager(loggers);
 		
 		Customer engin=new Customer(1,"Engin","Demiroð");
 		
