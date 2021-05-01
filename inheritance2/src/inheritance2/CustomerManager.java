@@ -7,7 +7,7 @@ public class CustomerManager {
 		super();
 		this._logger = logger;
 	}
-
+    //[LoggerAspect(new EmailLogger)]
 	public void add() {
 		System.out.println("müþteri eklendi");
 		_logger.log();

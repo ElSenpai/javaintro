@@ -11,7 +11,7 @@ public class Main {
 		engin2.customerNumber="3345";
 		
 		SendikaCustomer abc=new SendikaCustomer();
-		abc.sendikaBiseyi="9999";
+		
 		abc.customerNumber="123422";
         
 		CustomerManager cus =new CustomerManager();
