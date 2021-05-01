@@ -1,16 +1,16 @@
 package inheritance2;
 
 public class CustomerManager {
-	Logger _logger;
+	Logger logger;
 	
 	public CustomerManager(Logger logger) {
 		super();
-		this._logger = logger;
+		this.logger = logger;
 	}
     //[LoggerAspect(new EmailLogger)]
 	public void add() {
 		System.out.println("müþteri eklendi");
-		_logger.log();
+		logger.log();
 	}
 
 }
