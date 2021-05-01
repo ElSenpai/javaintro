@@ -13,10 +13,11 @@ public class CustomerManager {
  
 	public void add(Customer customer) {
 		System.out.println("Müþteri eklendi " +customer.getFirstName());
-		this.logger.log("loglandý");
+		this.logger.log(customer.getFirstName());
 	}
 	
 	public void delete(Customer customer) {
 		System.out.println("Müþteri silindi " +customer.getFirstName());
+		this.logger.log(customer.getFirstName());
 	}
 }
