@@ -1,7 +1,7 @@
 package odev3;
 
 public class InstructorManager extends UserManager {
-	   
+	    
 	     public void add(Instructor ins) {
 			System.out.println("eðitmen eklendi");
 		}
