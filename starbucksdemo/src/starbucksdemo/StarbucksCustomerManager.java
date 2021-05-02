@@ -12,7 +12,7 @@ public class StarbucksCustomerManager extends BaseCustomerManager {
 	@Override
 	public void add(Customer customer) {
 		
-		if(this.checkService.checkIfRealPerson(customer.getNationalIdentity())) {
+		if(checkService.checkIfRealPerson(customer.getNationalIdentity())) {
 			System.out.println("Sb müþteri eklendi :" +customer.getFirstName());
 		}
 		
