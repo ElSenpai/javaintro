@@ -1,4 +1,5 @@
-package odevler;
+package odev1;
+
 
 public class Main {
 
@@ -12,6 +13,7 @@ public class Main {
 		
 		eduManager.add(java, senpai);
 		eduManager.remove(java, senpai);
+
 	}
 
 }

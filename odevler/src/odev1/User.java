@@ -1,7 +1,12 @@
-package odevler;
+package odev1;
 
 public class User {
+
 	
+	int id;
+	String fullName;
+	String password;
+	String email;
 	public User() {
 		
 	}
@@ -11,11 +16,4 @@ public class User {
 		this.email=email;
 		this.password=password;
 	}
-	
-	int id;
-	String fullName;
-	String password;
-	String email;
-	
-
 }

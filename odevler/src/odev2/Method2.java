@@ -1,4 +1,4 @@
-package odevler.odev2;
+package odev2;
 
 public class Method2 {
 

@@ -1,7 +1,8 @@
-package odevler;
+package odev1;
+
+
 
 public class UserManager {
-	
 	public void register(User user) {
 		System.out.println("Kayıt olundu");
 	}

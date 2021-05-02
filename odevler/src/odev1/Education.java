@@ -1,8 +1,7 @@
-package odevler;
+package odev1;
 
 public class Education {
-	
-	public Education() {
+public Education() {
 		
 	}
 	public Education(int id,String name,String egitmen,boolean status) {
@@ -16,5 +15,4 @@ public class Education {
 	String name;
 	String egitmen;
 	boolean status;
-
 }
