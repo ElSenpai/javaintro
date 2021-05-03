@@ -18,8 +18,7 @@ public class Main {
        nero.delete(senpai);
        base.add(senpai);
        base.getall(senpai);
-       
-       
+    
        mernis.add(senpai);
 	}
 
