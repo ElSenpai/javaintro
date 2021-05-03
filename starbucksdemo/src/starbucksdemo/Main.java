@@ -11,7 +11,7 @@ public class Main {
 		senpai.setFirstName("AHMET SALÝH");
 		senpai.setLastName("UÇAR");
 		senpai.setDateOfBirth(1990);
-		senpai.setNationalIdentity("024");
+		senpai.setNationalIdentity("0284");
        BaseCustomerManager base=new StarbucksCustomerManager(new CustomerCheckManager());
        BaseCustomerManager mernis=new StarbucksCustomerManager(new MernisCheckManager());
        BaseCustomerManager nero=new NeroCustomerManager();
