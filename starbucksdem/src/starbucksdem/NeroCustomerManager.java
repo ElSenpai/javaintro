@@ -1,4 +1,4 @@
-package starbucksdemo;
+package starbucksdem;
 
 public class NeroCustomerManager extends BaseCustomerManager {
 

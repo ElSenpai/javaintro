@@ -1,4 +1,4 @@
-package starbucksdemo;
+package starbucksdem;
 
 import java.rmi.RemoteException;
 
