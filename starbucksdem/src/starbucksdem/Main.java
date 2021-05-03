@@ -19,6 +19,8 @@ public class Main {
        base.add(senpai);
        base.getall(senpai);
     
+       
+       
        mernis.add(senpai);
 	}
 
