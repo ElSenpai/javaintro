@@ -1,6 +1,6 @@
 package starbucksdemo;
 
-public abstract class BaseCustomerManager implements CustomerService {
+public abstract class BaseCustomerManager implements CustomerService  {
 	
 
 }

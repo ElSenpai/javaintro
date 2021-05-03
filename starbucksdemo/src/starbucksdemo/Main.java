@@ -1,22 +1,24 @@
 package starbucksdemo;
 
-import java.time.LocalDate;
+import java.rmi.RemoteException;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws NumberFormatException, RemoteException {
 		// TODO Auto-generated method stub
 		Customer senpai =new Customer();
 		senpai.setId(1);
-		senpai.setFirstName("Ahmet");
-		senpai.setLastName("Uçar");
-		senpai.setDateOfBirth(LocalDate.parse("1990-03-12"));
-		senpai.setNationalIdentity("12345");
+		senpai.setFirstName("AHMET SALÝH");
+		senpai.setLastName("UÇAR");
+		senpai.setDateOfBirth(1990);
+		senpai.setNationalIdentity("23005318024");
        BaseCustomerManager base=new StarbucksCustomerManager(new CustomerCheckManager());
+       BaseCustomerManager mernis=new StarbucksCustomerManager(new MernisCheckManager());
        BaseCustomerManager nero=new NeroCustomerManager();
        nero.delete(senpai);
        base.add(senpai);
        base.getall(senpai);
+       mernis.add(senpai);
 	}
 
 }

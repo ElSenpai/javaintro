@@ -1,5 +1,7 @@
 package starbucksdemo;
 
+import java.rmi.RemoteException;
+
 public class StarbucksCustomerManager extends BaseCustomerManager {
 	
 	CustomerCheckService checkService;
@@ -10,11 +12,17 @@ public class StarbucksCustomerManager extends BaseCustomerManager {
 	}
 
 	@Override
-	public void add(Customer customer) {
+	public void add(Customer customer) throws NumberFormatException, RemoteException {
 		
-		if(checkService.checkIfRealPerson(customer.getNationalIdentity())) {
-			System.out.println("Sb müþteri eklendi :" +customer.getFirstName());
-		}
+		
+			if(checkService.checkIfRealPerson(customer.getNationalIdentity(),customer.getFirstName(),customer.getLastName(),customer.getDateOfBirth())) {
+				System.out.println("Sb müþteri eklendi :" +customer.getFirstName());
+			}
+		 else {
+		 			System.out.println("Mevcut deðil");
+				}
+			
+		
 		
 		
 		

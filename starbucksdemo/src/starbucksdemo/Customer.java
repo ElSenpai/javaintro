@@ -1,18 +1,18 @@
 package starbucksdemo;
 
-import java.time.LocalDate;
+
 
 public class Customer {
 	
 	private int id;
 	private String firstName;
 	private String lastName;
-	private LocalDate dateOfBirth;
+	private int dateOfBirth;
 	private String nationalIdentity;
 	
 	public Customer() {}
 	
-	public Customer(int id, String firstName, String lastName, LocalDate dateOfBirth, String nationalIdentity) {
+	public Customer(int id, String firstName, String lastName, int dateOfBirth, String nationalIdentity) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
@@ -45,11 +45,11 @@ public class Customer {
 		this.lastName = lastName;
 	}
 
-	public LocalDate getDateOfBirth() {
+	public int getDateOfBirth() {
 		return dateOfBirth;
 	}
 
-	public void setDateOfBirth(LocalDate dateOfBirth) {
+	public void setDateOfBirth(int dateOfBirth) {
 		this.dateOfBirth = dateOfBirth;
 	}
 
