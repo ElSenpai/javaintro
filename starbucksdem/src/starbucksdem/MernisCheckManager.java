@@ -9,9 +9,11 @@ public class MernisCheckManager implements CustomerCheckService {
 	@Override
 	public boolean checkIfRealPerson(String tc,String firstName,String lastName,int birtDate) throws RemoteException {
 		KPSPublicSoapProxy hey=new KPSPublicSoapProxy();
+		boolean result=true;
+		result=hey.TCKimlikNoDogrula(Long.parseLong(tc), firstName, lastName, birtDate);
+		return result;
 		
-		hey.TCKimlikNoDogrula(Long.parseLong(tc), firstName, lastName, birtDate);
-		return true;
+		
 	}
 
 }
