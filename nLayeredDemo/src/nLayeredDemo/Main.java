@@ -14,8 +14,9 @@ public class Main {
 		ProductService productService=new ProductManager(new HibernateProductDao());
 		
 		Product product=new Product(1,1,"Elma",12,50);
-		
+		Product product1=new Product(1,2,"Armut",32,40);
 		productService.add(product);
+		productService.add(product1);
 		
 	}
 
