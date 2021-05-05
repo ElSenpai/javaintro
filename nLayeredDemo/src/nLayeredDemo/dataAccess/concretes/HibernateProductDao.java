@@ -1,5 +1,5 @@
 package nLayeredDemo.dataAccess.concretes;
 
-public class ProductDao {
+public class HibernateProductDao {
 
 }
