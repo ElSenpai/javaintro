@@ -15,9 +15,9 @@ public class Main {
        BaseCustomerManager base=new StarbucksCustomerManager(new CustomerCheckManager());
        BaseCustomerManager mernis=new StarbucksCustomerManager(new MernisCheckManager());
        BaseCustomerManager nero=new NeroCustomerManager();
-      // nero.delete(senpai);
-      // base.add(senpai);
-      // base.getall(senpai);
+       nero.delete(senpai);
+       base.add(senpai);
+       base.getall(senpai);
        mernis.add(senpai);
 	}
 
