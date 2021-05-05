@@ -10,9 +10,7 @@ public interface ProductService {
 	List<Product> getAll();
 	
 	
-	//void update(Product product);
-	//void delete(Product product);
-	//Product get(int id);
+	
 	
 
 }

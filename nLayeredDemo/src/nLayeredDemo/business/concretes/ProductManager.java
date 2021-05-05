@@ -22,7 +22,7 @@ public class ProductManager implements ProductService {
 			System.out.println("Bu kategoride ürün kabul edilmiyor");
 			return;
 		}
-		productDao.add(product);
+		this.productDao.add(product);
 		
 		
 	}
@@ -33,33 +33,6 @@ public class ProductManager implements ProductService {
 	}
 	
 	
-	
-	
-	
-
-//	@Override
-//	public void update(Product product) {
-//		
-//		productDao.update(product);
-//		
-//		
-//	}
-//
-//	@Override
-//	public void delete(Product product) {
-//		productDao.delete(product);
-//		
-//		
-//	}
-//
-//	@Override
-//	public Product get(int id) {
-//		
-//	return productDao.get(id);
-//		
-//		
-//	}
-
 	
 	
 
