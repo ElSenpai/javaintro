@@ -17,34 +17,43 @@ public class ProductManager implements ProductService {
 
 	@Override
 	public void add(Product product) {
-		
+		//business rules -- iþ  kodlarý
+		if(product.getCategoryId()==1) {
+			System.out.println("Bu kategoride ürün kabul edilmiyor");
+			return;
+		}
 		productDao.add(product);
-		// TODO Auto-generated method stub
+		
 		
 	}
 
 	@Override
 	public void update(Product product) {
-		// TODO Auto-generated method stub
+		
+		productDao.update(product);
+		
 		
 	}
 
 	@Override
 	public void delete(Product product) {
-		// TODO Auto-generated method stub
+		productDao.delete(product);
+		
 		
 	}
 
 	@Override
 	public Product get(int id) {
-		// TODO Auto-generated method stub
-		return null;
+		
+	return productDao.get(id);
+		
+		
 	}
 
 	@Override
 	public List<Product> getAll() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return productDao.getAll();
 	}
 	
 	
