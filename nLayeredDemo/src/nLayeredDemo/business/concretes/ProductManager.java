@@ -29,7 +29,7 @@ public class ProductManager implements ProductService {
 	@Override
 	public List<Product> getAll() {
 		
-		return productDao.getAll();
+		return this.productDao.getAll();
 	}
 	
 	
