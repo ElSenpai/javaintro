@@ -17,7 +17,7 @@ public class ProductManager implements ProductService {
 
 	@Override
 	public void add(Product product) {
-		//business rules -- iþ  kodlarý
+		//business rules -- is  kodlari
 		if(product.getCategoryId()==1) {
 			System.out.println("Bu kategoride ürün kabul edilmiyor");
 			return;
