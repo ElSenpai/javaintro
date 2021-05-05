@@ -1,8 +1,5 @@
 package nLayeredDemo.dataAccess.concretes;
-
-import java.util.ArrayList;
 import java.util.List;
-
 import nLayeredDemo.dataAccess.abstracts.ProductDao;
 import nLayeredDemo.entities.concretes.Product;
 
@@ -10,7 +7,7 @@ public class HibernateProductDao implements ProductDao {
 
 	@Override
 	public void add(Product product) {
-		// TODO Auto-generated method stub
+		System.out.println("Hibernate ile ekledi "+product.getName());
 		
 	}
 
