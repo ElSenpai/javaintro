@@ -26,35 +26,40 @@ public class ProductManager implements ProductService {
 		
 		
 	}
-
-	@Override
-	public void update(Product product) {
-		
-		productDao.update(product);
-		
-		
-	}
-
-	@Override
-	public void delete(Product product) {
-		productDao.delete(product);
-		
-		
-	}
-
-	@Override
-	public Product get(int id) {
-		
-	return productDao.get(id);
-		
-		
-	}
-
 	@Override
 	public List<Product> getAll() {
 		
 		return productDao.getAll();
 	}
+	
+	
+	
+	
+	
+
+//	@Override
+//	public void update(Product product) {
+//		
+//		productDao.update(product);
+//		
+//		
+//	}
+//
+//	@Override
+//	public void delete(Product product) {
+//		productDao.delete(product);
+//		
+//		
+//	}
+//
+//	@Override
+//	public Product get(int id) {
+//		
+//	return productDao.get(id);
+//		
+//		
+//	}
+
 	
 	
 
