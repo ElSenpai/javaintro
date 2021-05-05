@@ -23,6 +23,7 @@ public class Main {
 		productService.add(product);
 		productService.add(product1);
 		
+		
 		ProductService abcService=new ProductManager(new AbcProductDao());
 		
 		abcService.add(product1);
