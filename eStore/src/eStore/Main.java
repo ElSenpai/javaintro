@@ -15,6 +15,14 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
     
+		tested();
+		
+		
+	    
+		
+	}
+
+	private static void tested() {
 		AuthService hey=new AuthManager(new InMemoryUserDao(),new GoogleLoginAdapter(),new EmailLogger());
 		User senpai = new User();
 		senpai.setEmail("ahmet@gmail.com");
@@ -43,10 +51,6 @@ public class Main {
 		hey.register(senpai1);
 		System.out.println("---------------------");
 		hey.login(senpai.getPassword(),senpai.getEmail() );
-		
-		
-	    
-		
 	}
 
 }
