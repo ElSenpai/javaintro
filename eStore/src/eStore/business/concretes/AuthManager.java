@@ -12,7 +12,7 @@ import eStore.entities.concretes.User;
 
 
 public class AuthManager implements AuthService {
-
+	Scanner hey=new Scanner(System.in);
 	private UserDao userdao;
 	private LoginService loginServe;
 	private LoggerService logger;
@@ -42,10 +42,13 @@ public class AuthManager implements AuthService {
          if(this.rules(user)) {
 			
 			logger.log("Doðrulama kodu :"+ 356);
-		Scanner hey=new Scanner(System.in);
-		System.out.println("Kod :"  );
-		 hey.nextLine();  
-			System.out.println("Kayýt gerçekleþti : " +user.getFirstName());
+		    
+		     System.out.println("Kod :"  );
+		     
+		     hey.nextLine();
+		     
+		     
+			 System.out.println("Kayýt gerçekleþti : " +user.getFirstName());
 			
 			this.userdao.add(user);
 			
