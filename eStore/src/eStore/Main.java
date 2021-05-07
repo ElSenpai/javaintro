@@ -86,14 +86,14 @@ static Scanner yoo=new Scanner(System.in);
 		yoo.nextLine();
 		
 		System.out.println("Press FirstName : ");
-		String firstName=yoo.nextLine();
+		String f=yoo.nextLine();
 		System.out.println("Press LasttName : ");
-		String lastName=yoo.nextLine();
+		String l=yoo.nextLine();
 		System.out.println("Press Email : ");
-		String email=yoo.nextLine();
+		String e=yoo.nextLine();
 		System.out.println("Press Password : ");
-		String password=yoo.nextLine();
-		User user =new User(1,firstName,lastName,password,email);
+		String p=yoo.nextLine();
+		User user =new User(1,f,l,p,e);
 		authService.register(user);
 	}
 	private static void login() {
