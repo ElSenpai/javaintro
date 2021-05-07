@@ -2,6 +2,8 @@ package eStore;
 
 
 
+import java.util.Scanner;
+
 import eStore.business.abstracts.AuthService;
 import eStore.business.concretes.AuthManager;
 import eStore.core.adapter.EmailLogger;
@@ -11,11 +13,12 @@ import eStore.entities.concretes.User;
 
 
 public class Main {
-
+static Scanner yoo=new Scanner(System.in);	
+	  static AuthService authService=new AuthManager(new InMemoryUserDao(),new GoogleLoginAdapter(),new EmailLogger());
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-    
+		
 		tested();
+		tested2();
 		
 		
 	    
@@ -52,5 +55,53 @@ public class Main {
 		System.out.println("---------------------");
 		hey.login(senpai.getPassword(),senpai.getEmail() );
 	}
+	
+	private static void tested2() {	
+		int number;
+		System.out.println("    ********Operations********\n"
+				+"\n"+ "          1 Register\n"
+				+ "          2 Register With Google\n"
+				+ "          3 Login\n");
+		System.out.println("Decide to Operation ;");
+		while (true) {
+			
+			number=yoo.nextInt();
+			switch(number) {
+			case 1:
+				register();
+				break;
+			case 2:
+				googleRegister();
+				break;
+			case 3:
+				login();
+				break;
+			
+			}
+			
+		}
+		
+	}
+	private static void register() {
+		yoo.nextLine();
+		
+		System.out.println("Press FirstName : ");
+		String firstName=yoo.nextLine();
+		System.out.println("Press LasttName : ");
+		String lastName=yoo.nextLine();
+		System.out.println("Press Email : ");
+		String email=yoo.nextLine();
+		System.out.println("Press Password : ");
+		String password=yoo.nextLine();
+		User user =new User(1,firstName,lastName,password,email);
+		authService.register(user);
+	}
+	private static void login() {
+		
+	}
+	private static void googleRegister() {
+		
+	}
+	
 
 }
