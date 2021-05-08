@@ -20,7 +20,6 @@ static Scanner yoo=new Scanner(System.in);
 		tested();
 		tested2();
 		
-		
 	    
 		
 	}
